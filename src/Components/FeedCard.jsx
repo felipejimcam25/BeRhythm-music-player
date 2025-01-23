@@ -5,7 +5,6 @@ export default function FeedCard({ title, similar, featured, newRelease}) {
 
 
 
-
   return (
     <div className='card-body-feed'>
         <p className='feed-title'>{title}</p>
