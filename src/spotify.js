@@ -2,7 +2,7 @@ import axios from "axios";
 
 const authEndPoint = "https://accounts.spotify.com/authorize?";
 const clientId = "1a9be68c278249ea846c4dfbb5686751";
-const redirectUri = "berhythm-music-player.vercel.app";
+const redirectUri = "https://berhythm-music-player.vercel.app/";
 const scopes = ["user-library-read", "playlist-read-private"];
 
 export const loginEndPoint = `${authEndPoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
