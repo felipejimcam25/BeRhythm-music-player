@@ -1,0 +1,570 @@
+/* LOCAL FONTS STYLES */
+    /* POPPINS  */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+    /* POPPINS  */
+    /* SATOSHI */
+        @import url('https://fonts.cdnfonts.com/css/satoshi');
+    /* SATOSHI */
+
+
+/* LOCAL FONTS STYLES */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080B2B;
+    padding: 0 10px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 580px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* END OF THE STANDARD STYLES */
+
+/* START OF NAV STYLES */
+.nav_menu {
+    background-color: #1b1e41;
+    border-radius: 120px;
+    width: 100%;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_options {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4px 33px;
+}
+
+/* END OF THE NAV STYLES */
+
+/* START OF BRAND AND SEARCH STYLES */
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search_input {
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #202744;
+    border-style: none;
+    color: #fff;
+    padding: 15px 10px;
+    outline: none;
+}
+
+.search_btn {
+    height: 30px;
+    background-color: #202744;
+    border: none;
+    margin-left: 5px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.header_pieces{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.profile_photo{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+/* END OF BRAND AND SEARCH STYLES */
+
+/* LOGIN STYLES */
+.login_btn {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(98deg, #00AFFF 25.66%, #A4E2FF 105.85%);
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* END OF LOGIN STYLES */
+
+/* START OF NAVBAR STYLES */
+.navMenu{   
+    width: 100%;
+    background-color: #1B1E41;
+    padding: 10px 0;
+    border-radius: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navMenuList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4px 33px;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 30px;
+}
+.navOption{
+    list-style: none;
+}
+.btn-body .nav_link{
+    transition: all 0.5s ease;
+}
+.btn-body.active{
+    width: 60px;
+    background-color: #00AFFF;
+    border-radius: 30px;
+    padding: 15px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.05);
+}
+.btn-body.active .nav_link{
+    color: #000;
+}
+/* END OF NAVBAR STYLES */
+
+/* START OF LOGIN STYLES */
+.login_header{
+    padding-top: 20px;
+}
+.login_btn{
+    display: flex;
+    height: 24px;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    align-self: stretch;
+    border-radius: 5px;
+    background: linear-gradient(98deg, #00AFFF 25.66%, #A4E2FF 105.85%);
+}
+
+
+/* END OF LOGIN STYLES */
+
+/* START OF LIBRARY STYLES */
+.library-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.playlist-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+.playlist-img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.screen-title{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.playlist-name{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    font-weight: medium;
+    margin-top: 8px;
+}
+
+.play-playlist{
+    color: #fff;
+}
+
+.playlist-fade{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 80%;
+    height: 34%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8%;
+    transition: 0.2s ease;
+
+}
+.playlist-card .playlist-fade:hover{
+    opacity: 1;
+}
+
+/* END OF LIBRARY STYLES */
+
+/* START OF PLAYER STYLES */
+.album-img{
+    width: 171px;
+}
+
+.album-name{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.artist-name{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-size: 13px;
+    font-weight: medium;
+}
+.player-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.player-content .upper-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+.queue-container{
+    width: 80%;
+    border-radius: 20px;
+    background-color: #1B1E41;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+.upNext{
+    text-align: center;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.queue{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.queue-list{
+    height: 100px;
+    overflow-y: auto;
+}
+.queue-list::-webkit-scrollbar{
+    width: 10px;
+}
+.queue-list::-webkit-scrollbar-thumb{
+    background-color: #00AFFF;
+    border-radius: 5px;
+}
+.queue-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    transition: 0.2s ease;
+}
+
+.track-name{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0px;
+    text-overflow: ellipsis;
+}
+.track-duration{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+._item_1hfca_1{
+    transition: all 0.2s ease;
+}
+._item_1hfca_1:hover{
+    transform: scale(0.95);
+    background-color: #282d5f;
+    border-radius: 10px;
+}
+
+.below-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.song-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.song-title{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+.song-artist{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+.song-guide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.duration{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.music-player-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+._title_1ldbx_1{
+    font-size: 20px !important;
+}
+._time_ac0au_1{
+    font-size: 15px !important;
+}
+._play_rfl62_1{
+    width: 40px !important;
+    height: 40px !important;
+}
+._pause_1talx_1{
+    width: 40px !important;
+    height: 40px !important;
+}
+._next_147p5_1{
+    width: 40px !important;
+    height: 40px !important;
+}
+._previous_1mino_1{
+    width: 40px !important;
+    height: 40px !important;
+}
+._wrapper_1sefb_1{
+    background-color: transparent !important;;
+}
+/* END OF PLAYER STYLES */
+
+/* START OF FEED STYLES */
+
+.feed-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.entry-image{
+    width: 76px;
+    height: 74px;
+}
+.entry-body{
+    display: flex;
+}
+.feed-content{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.entry-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.entry-info{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.playlist-name{
+    max-width: 90px;
+}
+
+.feed-title{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+/* END OF FEED STYLES */
+
+/* START OF FAVORITES STYLES */
+
+.fav-title{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.fav-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fav-content{
+    display: flex;
+    align-items: center;
+    background-color: #282d5f;
+    padding: 5px 5px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.fav-content:hover{
+    transform: scale(0.95);
+    background-color: #282d5f;
+    border-radius: 10px;
+}
+
+.image-album{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.song-fav{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.artist-fav{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* END OF FAVORITES STYLES */
+
+
+/* START OF TRENDING STYLES */
+
+.image-trend{
+    width: 76px;
+    height: 74px;
+}
+
+
+.trend-title{
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.trending-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.trend-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.trend-info{
+    color: #fff;
+    font-family: 'satoshi', sans-serif;
+    font-weight: 500;
+}
+
+.album-trend{
+    font-size: 15px;
+
+}
+
+.artist-trend{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+/* END OF TRENDING STYLES */
