@@ -101,6 +101,7 @@ body {
 /* LOGIN STYLES */
 .login_btn {
     width: 50%;
+    height: 100px;
     margin: 0 auto;
     display: flex;
     padding: 5px 50px;
@@ -111,6 +112,25 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    height: 500px;
+    width: 100%;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.login_header{
+    width: 150px;
+}
+
+
 
 
 /* END OF LOGIN STYLES */
